@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/request"
+        android:hint=""
+        android:padding="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/ok"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="Yes"
+            />
+
+        <Button
+            android:id="@+id/later"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow"
+            android:text="Later"
+            />
+
+        <Button
+            android:id="@+id/never"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red"
+            android:text="Never"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

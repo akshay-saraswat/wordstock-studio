@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:id="@+id/settings_layout"
+    tools:context=".SettingsFragment" >
+
+    <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="center"
+     android:background="#99000000">
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp" >
+
+	    <TextView
+		    android:id="@+id/ws_header"
+		    android:padding="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:background="#50000000"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/ws_random"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_header"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_random_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_random"
+		    android:layout_alignBottom="@+id/ws_random"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_expand_definition"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_random"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_expand_definition_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_expand_definition"
+		    android:layout_alignBottom="@+id/ws_expand_definition"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_expand_examples"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_expand_definition"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_expand_examples_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_expand_examples"
+		    android:layout_alignBottom="@+id/ws_expand_examples"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_expand_synonyms"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_expand_examples"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_expand_synonyms_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_expand_synonyms"
+		    android:layout_alignBottom="@+id/ws_expand_synonyms"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_expand_antonyms"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_expand_synonyms"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_expand_antonyms_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_expand_antonyms"
+		    android:layout_alignBottom="@+id/ws_expand_antonyms"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_expand_origin"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_expand_antonyms"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_expand_origin_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_expand_origin"
+		    android:layout_alignBottom="@+id/ws_expand_origin"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_speak_definition"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_expand_origin"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_speak_definition_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_speak_definition"
+		    android:layout_alignBottom="@+id/ws_speak_definition"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_speak_example"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_speak_definition"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_speak_example_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_speak_example"
+		    android:layout_alignBottom="@+id/ws_speak_example"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_speak_synonym"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_speak_example"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_speak_synonym_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_speak_synonym"
+		    android:layout_alignBottom="@+id/ws_speak_synonym"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+	
+		<TextView
+		    android:id="@+id/ws_speak_antonym"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_speak_synonym"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_speak_antonym_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_speak_antonym"
+		    android:layout_alignBottom="@+id/ws_speak_antonym"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/ws_speak_origin"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_speak_antonym"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/ws_speak_origin_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/ws_speak_origin"
+		    android:layout_alignBottom="@+id/ws_speak_origin"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/flashcard_header"
+		    android:padding="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ws_speak_origin"
+		    android:layout_marginTop="10dp"
+		    android:background="#50000000"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/flashcard_reverse"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/flashcard_header"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/flashcard_reverse_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/flashcard_reverse"
+		    android:layout_alignBottom="@+id/flashcard_reverse"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<TextView
+		    android:id="@+id/misc_header"
+		    android:padding="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/flashcard_reverse"
+		    android:layout_marginTop="10dp"
+		    android:background="#50000000"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/night_mode"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/misc_header"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@android:color/transparent"
+		    android:textColor="#FFFFFFFF"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Switch
+		    android:id="@+id/night_mode_switch"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignBaseline="@+id/night_mode"
+		    android:layout_alignBottom="@+id/night_mode"
+		    android:layout_alignParentRight="true"
+		    android:textOn=""
+		    android:textOff=""
+		    android:thumb="@drawable/switch_thumb"
+		    android:track="@drawable/switch_track" />
+
+		<Button
+		    android:id="@+id/wallpaper_select"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/night_mode"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="20dp"
+		    android:background="@drawable/btn_blue"
+		    android:text="Change Wallpaper" />
+
+	</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

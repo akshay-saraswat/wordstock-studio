@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Word Stock</string>
+    <string name="app_version">1.9</string>
+    <string name="app_code">9</string>
+    <string name="title_section1">Word Stock</string>
+    <string name="title_section2">Flashcard Test</string>
+    <string name="title_section3">Sentence Completion</string>
+    <string name="title_section4">Sentence Equivalence</string>
+    <string name="title_section5">Statistics</string>
+    <string name="title_section6">Settings</string>
+    <string name="title_section7">Coming Soon</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example"> </string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_theme">Change Theme</string>
+    <string name="action_word_attribute">Select Attribute</string>
+    <string name="org_name">Asharfi Co.</string>
+    <string name="colon_string">:\t</string>
+    <string name="test_time_string">Test time \t\t</string>
+    <string name="test_span_string">Test span</string>
+    <string name="correct_string">Correct</string>
+    <string name="attempted_string">Attempted</string>
+    <string name="total_string">Total</string>
+    <string name="to_learn_string">To learn</string>
+    <string name="learned_string">Learned</string>
+    <string name="search_string">Search</string>
+    <string name="search_hint">Search Word</string>
+    <string name="glyph">�</string>
+    <string name="latin_e">é</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-2930097183130432/8069763505</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2930097183130432/8375657908</string>
+
+</resources>

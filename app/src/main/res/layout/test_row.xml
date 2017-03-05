@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="#96F4F4F4" -->
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_text_parent"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/row_index_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_alignLeft="@+id/row_index_view"
+        android:layout_alignTop="@+id/row_index_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/wrong_image"
+        android:layout_alignTop="@+id/row_index_view"
+        android:layout_alignLeft="@+id/row_index_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/wrong"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+            android:id="@+id/row_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/row_index_view"
+            android:paddingBottom="15dp"
+        	android:paddingLeft="15dp"
+        	android:paddingRight="15dp"
+        	android:paddingTop="15dp"
+            android:background="@android:color/transparent" />
+    
+    <LinearLayout
+        android:id="@+id/secondary"
+    	android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/primary"
+        android:background="@drawable/list_divider" />
+
+</RelativeLayout >

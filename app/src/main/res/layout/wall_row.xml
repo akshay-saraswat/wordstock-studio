@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="#96F4F4F4" -->
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_text_parent"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <inc.asharfi.wordstock.CircularImageView
+        android:id="@+id/wall_image"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/wrong"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+            android:id="@+id/wall_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/wall_image"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp"
+        	android:paddingLeft="15dp"
+        	android:paddingRight="15dp"
+        	android:paddingTop="15dp"
+            android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_alignParentRight="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        android:layout_marginRight="10dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+    
+    <LinearLayout
+        android:id="@+id/secondary"
+    	android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/list_divider" />
+
+</RelativeLayout >

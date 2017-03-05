@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <item android:state_enabled="false" android:drawable="@drawable/switch_thumb_disabled" />
+    <item android:state_pressed="true"  android:drawable="@drawable/switch_thumb_pressed" />
+    <item android:state_checked="true"  android:drawable="@drawable/switch_thumb_activated" />
+    <item                               android:drawable="@drawable/switch_thumb_default" />
+    -->]
+    <item >
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:visible="true"
+			android:dither="true"
+			android:useLevel="false"
+			android:shape="ring"
+			android:innerRadius="10dp" >
+			<solid		android:color="@android:color/white" />
+	</shape>
+	</item>
+    <item >
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:visible="true"
+			android:dither="true"
+			android:useLevel="false"
+			android:shape="ring"
+			android:innerRadius="10dp" >
+			<solid		android:color="#10404040" />
+			<padding android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp" />
+	</shape>
+	</item>
+	<item >
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:visible="true"
+			android:dither="true"
+			android:useLevel="false"
+			android:shape="ring"
+			android:innerRadius="10dp" >
+			<solid		android:color="#20404040" />
+			<padding android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp" />
+	</shape>
+	</item>
+	<item >
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:visible="true"
+			android:dither="true"
+			android:useLevel="false"
+			android:shape="ring"
+			android:innerRadius="10dp" >
+			<solid		android:color="#30404040" />
+			<padding android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp" />
+	</shape>
+	</item>
+</selector>

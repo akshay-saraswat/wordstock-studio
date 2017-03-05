@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/correct_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none"
+        android:divider="#80434343"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" 
+		android:cacheColorHint="@android:color/transparent"
+        android:background="@drawable/list_bg" />
+
+    <ListView
+        android:id="@+id/incorrect_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/correct_list"
+        android:scrollbars="none"
+        android:divider="#80434343"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" 
+		android:cacheColorHint="@android:color/transparent"
+        android:background="@drawable/list_bg" />
+
+    <!--com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView-->
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/attribute_layout"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/attribute_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+		android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        android:fastScrollEnabled="true"
+        android:divider="#80434343"
+        android:dividerHeight="0dip"
+        android:overScrollFooter="@android:color/transparent"
+        android:footerDividersEnabled="false" />
+
+</RelativeLayout>
+

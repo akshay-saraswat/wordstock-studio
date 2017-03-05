@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer 1 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#10404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="2px" android:right="2px" android:bottom="2px" android:left="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 2 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#30404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="2px" android:right="2px" android:bottom="2px" android:left="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 3 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#50404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="2px" android:right="2px" android:bottom="2px" android:left="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 4 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#70404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="2px" android:right="2px" android:bottom="2px" android:left="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 5 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#90404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="2px" android:right="2px" android:bottom="2px" android:left="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 6 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#B0404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="0px" android:bottom="2px" android:left="0px" android:right="2px" />
+        </shape>
+    </item>
+
+    <!-- Layer 7 -->
+    <item>
+        <shape>
+            <corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+            <stroke android:width="1px" android:color="#D0404040" />
+            <solid android:color="#00000000" />
+            <padding android:top="0px" android:bottom="2px" android:left="0px" android:right="2px" />
+        </shape>
+    </item>
+
+    <!-- content background -->
+    <item>
+		<shape xmlns:android="http://schemas.android.com/apk/res/android">
+			<corners android:topLeftRadius="20dp" android:topRightRadius="20dp" android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+			<solid android:color="#FFF0F0F0"/>
+		</shape>
+    </item>
+</layer-list>

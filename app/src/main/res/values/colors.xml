@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+ 
+    <item name="selctor_white" type="color">#40d0d0d0</item>
+    <item name="selcted_white" type="color">#40d0d0d0</item>
+    <item name="apptheme_color" type="color">#DA4A38</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/selctor_white</item>
+        <item>@color/selcted_white</item>
+    </integer-array>
+ 
+</resources> 
+

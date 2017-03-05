@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/test_layout"
+    tools:context=".TestFragment" >
+
+	<RelativeLayout
+	        android:id="@+id/word_bg_view"
+	        android:paddingTop="20dp"
+	        android:paddingBottom="20dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/first_item_bg" >
+        <TextView
+            android:id="@+id/q_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q. "
+            />
+        <TextView
+            android:id="@+id/word_view"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/q_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/ques_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/word_bg_view"
+        android:listSelector="@android:color/transparent" 
+		android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        android:divider="#80434343"
+        android:dividerHeight="0dip" />
+
+    <LinearLayout
+        android:id="@+id/secondary"
+    	android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+	    android:layout_marginRight="4dp"
+        android:layout_below="@+id/word_bg_view"
+        android:layout_alignLeft="@+id/word_bg_view"
+        android:layout_alignRight="@+id/word_bg_view"
+        android:background="#80434343" />
+
+</RelativeLayout>

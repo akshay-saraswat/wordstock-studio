@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/flashcard_layout"
+    tools:context=".FlashcardFragment" >
+
+    <TextView
+	        android:id="@+id/word_view"
+	        android:paddingTop="20dp"
+	        android:paddingBottom="20dp"
+	        android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/first_item_bg" />
+
+    <Button
+        android:id="@+id/sound_button"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_alignBottom="@+id/word_view"
+        android:layout_alignLeft="@+id/word_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/sound_icon" />
+    
+    <ExpandableListView
+        android:id="@+id/meaning_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/word_view"
+        android:listSelector="@android:color/transparent" 
+		android:cacheColorHint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        android:groupIndicator="@drawable/list_indicator"
+        android:divider="@null"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/secondary"
+    	android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+	    android:layout_marginRight="4dp"
+        android:layout_below="@+id/word_view"
+        android:layout_alignLeft="@+id/word_view"
+        android:layout_alignRight="@+id/word_view"
+        android:background="#80434343" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+        android:id="@+id/primary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+    	android:descendantFocusability="blocksDescendants"
+    	android:orientation="horizontal">
+    	
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="10dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/indicator_right" />
+ 
+     <!-- Star -->
+     <Button
+        android:id="@+id/star_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:background="@drawable/star_off"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="" />
+
+    <!-- Word -->
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/star_btn"
+        android:text="" />
+
+    <!-- Type -->
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/word"
+        android:layout_toRightOf="@+id/word"
+        android:layout_toLeftOf="@+id/indicator"
+        android:gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:text="" />
+
+    <!-- Meaning -->
+    <TextView
+        android:id="@+id/meaning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/star_btn"
+        android:layout_toLeftOf="@+id/indicator" />
+
+     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/secondary"
+    	android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/primary"
+        android:background="@drawable/list_divider" />
+
+</RelativeLayout>
